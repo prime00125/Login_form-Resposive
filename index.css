@@ -1,0 +1,124 @@
+/* Main body */
+.body{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:100px;
+   
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* sign up page */
+ #left, #right{
+    width:600px;
+    height: 500px;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    background-color: white;
+} 
+.row:nth-child(1){
+ 
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top:50px;
+}
+.row:nth-child(2){
+  
+    width: 200px;
+    font-size: 30px;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+   
+}
+
+#btn,#btnTrans{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px 30px 30px 30px;
+    outline: none;
+    border:none;
+    box-sizing: content-box;
+    box-shadow: 3px 4px 1px black;
+    color:white;
+    font-size:larger;
+    font-weight: 600;
+    
+}
+
+
+
+/* right side */
+.rightPanel, .leftPanel{
+    display: flex;
+    width: 600px;
+    height: 500px;
+    background-color: rgb(255, 85, 85);
+    color:white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+   
+}
+.rightPanel section,.leftPanel section{
+    font-size: 50px;
+}
+.rightPanel p,.leftPanel p{
+    width:200px;
+    text-align: center; 
+}
+
+
+
+/* Login page */
+#right{   
+    z-index:-1;
+    position: absolute;
+    left: 170px;
+
+    transition: all 1s ease-in-out 0.5s ;
+}
+
+.leftPanel{
+    z-index:-1;
+    position: absolute;
+    left:167px;
+   
+    transition: all 1s ease-in-out ;
+
+}
+
+.rightPanel{
+   
+    transition: all 1s ease-in-out ;
+}
+
+#btn{
+    background-color: rgb(255, 85, 85);
+   
+}
+#dialog{
+
+    z-index: 101;
+    box-shadow: 4px 10px 40px black;
+    width:40%;
+    position: absolute;
+    display: block;
+    top:30%;
+    left:30%;
+    transition: all 5s ease-in-out;
+}
+
+
